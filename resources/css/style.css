@@ -232,3 +232,20 @@ ul.todo#completed:not(:empty):before{
     left: 50%;
     margin: 0 0 0 -75px;
 }
+
+ul.todo#todo:after{
+    content: 'YOu have nothing to-do!';
+}
+
+ul.todo#completed:after {
+    content: 'You have yet complete any tasks.';
+}
+
+ul.todo#todo:after,
+ul.todo#completed:after{
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
